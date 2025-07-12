@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-login</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: teal;    
+    }
+    header{
+   align-items: center;
+   padding: 10px;
+   background-color: white;
+   box-shadow: -25px 0 10px black;
+   position: sticky;
+   z-index: 10;
+   top: 0;
+   width: 100%;
+   height: 80px;
+   overflow: hidden;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    margin-right:50px ;
+    position: relative;
+    top: 20px;  
+}
+nav ul a{
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.cart-badge{
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    color: white;
+    background-color: blueviolet;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: o.5rem;
+    font-weight: small;   
+}
+@media (max-width:768px){
+       header{
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+   } 
+   header nav ul{
+    margin-top: 50px;
+   }
+   .logo{
+    height: 50px;
+    width: 30px;
+    position: relative;
+    left: 110px;
+   }
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 7rem;
+}
+.form-fill input{
+    border: none;
+    border-bottom: 2px solid navy;
+}
+input:focus ~ label{
+    top: -20px;
+    font-size: 15px;
+    color: greenyellow;
+}
+input{
+    border: none;
+    outline: none;
+}
+    .login{
+        background-color: aliceblue;
+        border: 2px black;
+        height: 300px;
+        width: 250px;
+        padding: 30px 30px;
+        border-radius: 20px;
+    }
+    .user img {
+        width: 50px;
+        padding-left: 20px;
+        margin-left: 45px;
+        margin-bottom: 30px;
+    }
+      .submit a { 
+         color: blueviolet; 
+         text-decoration: none;
+         font-size: 20px;
+         padding:1px 1px ;
+      
+       
+    }
+    .submit a:hover{
+        /* background-color: teal; */
+        color: teal;
+           border: 2px solid black;
+        border-radius: 10px;
+        transform: translateY(-10px);
+        
+    }
+    .anchor a {
+        text-decoration: none;
+        color: brown;
+    }
+    main a{
+        position: relative;
+        top: 10px;
+        text-decoration: none;
+    }
+   </style>
+</head>
+<body>
+        <header>
+            <nav>
+            <div class="logo">
+                <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="">
+            </div>
+                <ul>
+                    <a href="./index.html">home</a>
+                    <a href="./shop.html">shop</a>
+                    <a href="./cart.html">cart</a>
+                    <a href="./login/logo.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-badge">3</span></a> 
+                </ul>
+        </nav>
+    </header>
+    <form action="">
+    <div class="login">
+        <div class="user">
+            <img src="./user-logo.png" alt="">
+        </div>
+    <div class="form-fill">
+        <!-- <label for="">email:</label> -->
+         <label type="email"></label>
+        <input type="email" name="" id="" placeholder="name" required ><br><br>
+         <!-- <label for="">password:</label> -->
+             <label type="password"></label>
+        <input type="password" name="" id="" placeholder="password" required ><br><br><br>
+        </div>
+        <div class="anchor">
+        <a href="./forgot-password.html">forgot password</a><br><br><br>
+        </div>
+        <div class="submit">
+            <!-- <a href="./index.html" class="home" id="home" target="_blank">submit</a> -->
+        <input type="submit" value="submit"  onclick="sucess()">
+        </div>
+        <main>
+        <a href="./index.html">back to home</a>
+        </main>
+        </div>
+        
+        </form>
+          <!-- <script>
+    //         name=prompt("enter your name");
+    // document.getElementById('home').addEventListener('click', function(sucess) {
+    //   // Show confirmation dialog
+    //   var confirmed = alert(name+" your account is successfully created....");
+    //   if (!confirmed) {
+    //     event.preventDefault(); // Stop the navigation if not confirmed
+    //   }
+    //   // If confirmed, the navigation proceeds
+    // });
+  </script> -->
+<!-- 
+        <script> 
+        name=prompt("enter your name")
+            function sucess(){
+         
+                alert( name+" your account is successfully created...." );
+            }
+          </script>  -->
+
+
+</body>
+</html>
