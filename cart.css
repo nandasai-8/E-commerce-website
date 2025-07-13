@@ -73,13 +73,26 @@ nav ul a:hover{
     position: relative;
     left: 150px;
    }
+   .cart-card{
+    font-size: 8px;
+   }
+   .cart-card img{
+    width: 80px;
+    height: 90px;
+   }
+   .wrong i{
+    position: relative;
+    right: 27rem;
+   }
+   .plus i{
+    position: relative;
+    left: -25rem;
+   }
    .card2{
     position: relative;
     left: -10rem;
    }
-   
-
-      .footer-head{
+   .footer-head{
     font-size: 10px;
    }
    .footer-about{
@@ -109,6 +122,13 @@ nav ul a:hover{
    }
    .footer-customer{
     margin-left: -30px;
+   }
+   main{
+    display: none;
+   }
+   .cart-card{
+    width: 20rem;
+    height: 13rem;
    }
 }
 

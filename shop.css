@@ -89,10 +89,11 @@ nav ul a:hover{
     position: relative;
     top: 50px;
     padding: 0m 50px;
+    right: 17rem;
    }
    .search  span i{
     position: relative;
-    right: 25rem;
+    right: 27.5rem;
    }
    .product-card{
     position: relative;
